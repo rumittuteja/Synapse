@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G17023" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="optionCell" editingAccessoryType="checkmark" rowHeight="55" id="C2I-Lo-qiw" customClass="OptionTableViewCell" customModule="PushNotificationPOC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C2I-Lo-qiw" id="huy-C8-tBy">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="W5R-1j-bpj">
+                        <rect key="frame" x="45" y="8" width="322" height="39"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3JY-2o-jIj">
+                                <rect key="frame" x="20" y="10" width="37.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3JY-2o-jIj" secondAttribute="trailing" constant="8" id="48o-5D-kq3"/>
+                            <constraint firstAttribute="bottom" secondItem="3JY-2o-jIj" secondAttribute="bottom" constant="10.5" id="5rb-9w-5tC"/>
+                            <constraint firstItem="3JY-2o-jIj" firstAttribute="top" secondItem="W5R-1j-bpj" secondAttribute="top" constant="10" id="TNB-vA-nsD"/>
+                            <constraint firstItem="3JY-2o-jIj" firstAttribute="leading" secondItem="W5R-1j-bpj" secondAttribute="leading" constant="20" id="sFG-eG-Prv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="W5R-1j-bpj" secondAttribute="bottom" id="1wJ-ZN-IU5"/>
+                    <constraint firstAttribute="topMargin" secondItem="W5R-1j-bpj" secondAttribute="top" id="Ia9-Uo-4oN"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="W5R-1j-bpj" secondAttribute="trailing" id="KgF-Yc-PiY"/>
+                    <constraint firstItem="W5R-1j-bpj" firstAttribute="leading" secondItem="huy-C8-tBy" secondAttribute="leadingMargin" constant="37" id="g0q-8C-4L2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblBackView" destination="W5R-1j-bpj" id="1fL-SZ-ka9"/>
+                <outlet property="lblOption" destination="3JY-2o-jIj" id="z2s-uc-Jit"/>
+            </connections>
+            <point key="canvasLocation" x="-215.5" y="-203.5"/>
+        </tableViewCell>
+    </objects>
+</document>
